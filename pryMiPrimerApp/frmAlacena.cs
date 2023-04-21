@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace pryMiPrimerApp
 {
-    public partial class frmLacena : Form
+    public partial class frmAlacena : Form
     {
-        public frmLacena()
+        public frmAlacena()
         {
             InitializeComponent();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
