@@ -17,7 +17,7 @@ namespace pryMiPrimerApp
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void frmAlacena_Load(object sender, EventArgs e)
         {
 
         }
