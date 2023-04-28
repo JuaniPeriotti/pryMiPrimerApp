@@ -12,44 +12,42 @@ namespace pryMiPrimerApp
 {
     public partial class frmFinanzas : Form
     {
+        //zona declaración de variables globales al formualrio
+
+        decimal varDeposito;
+        decimal varAlquiler;
+        decimal varImpuestos;
+        decimal varComida;
+        decimal varVarios;
+        decimal varTotal;
+
         public frmFinanzas()
         {
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            varDeposito = 0;
+            varAlquiler = 0;
+            varImpuestos = 0;
+            varComida = 0;
+            varVarios = 0;
+            varTotal = 0;
         }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
+        private void cmdGrabar_Click(object sender, EventArgs e)
         {
+            varDeposito = Convert.ToDecimal(txtDeposito.Text);
+            varAlquiler = Convert.ToDecimal(txtAlquiler.Text);
+            varImpuestos = Convert.ToDecimal(txtimpuestos.Text);
+            varComida = Convert.ToDecimal(txtComida.Text);
+            varVarios = Convert.ToDecimal(txtVarios.Text);
+            varTotal = Convert.ToDecimal(txtVarios.Text);
 
+            varTotal = varDeposito - (varAlquiler + varImpuestos + varComida);
+
+            lblTotal.Text = varTotal.ToString();
         }
     }
 }
