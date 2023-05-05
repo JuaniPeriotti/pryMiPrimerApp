@@ -43,9 +43,8 @@ namespace pryMiPrimerApp
             varImpuestos = Convert.ToDecimal(txtimpuestos.Text);
             varComida = Convert.ToDecimal(txtComida.Text);
             varVarios = Convert.ToDecimal(txtVarios.Text);
-            varTotal = Convert.ToDecimal(txtVarios.Text);
 
-            varTotal = varDeposito - (varAlquiler + varImpuestos + varComida);
+            varTotal = varDeposito - (varAlquiler + varImpuestos + varComida + varVarios);
 
             lblTotal.Text = varTotal.ToString();
         }
