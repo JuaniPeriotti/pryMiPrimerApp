@@ -38,7 +38,7 @@
             this.lblImpuestos = new System.Windows.Forms.Label();
             this.txtVarios = new System.Windows.Forms.TextBox();
             this.txtComida = new System.Windows.Forms.TextBox();
-            this.txtimpuestos = new System.Windows.Forms.TextBox();
+            this.txtImpuestos = new System.Windows.Forms.TextBox();
             this.txtAlquiler = new System.Windows.Forms.TextBox();
             this.lblAlquiler = new System.Windows.Forms.Label();
             this.lblTOTA = new System.Windows.Forms.Label();
@@ -83,7 +83,7 @@
             this.mrcGastos.Controls.Add(this.lblImpuestos);
             this.mrcGastos.Controls.Add(this.txtVarios);
             this.mrcGastos.Controls.Add(this.txtComida);
-            this.mrcGastos.Controls.Add(this.txtimpuestos);
+            this.mrcGastos.Controls.Add(this.txtImpuestos);
             this.mrcGastos.Controls.Add(this.txtAlquiler);
             this.mrcGastos.Controls.Add(this.lblAlquiler);
             this.mrcGastos.Location = new System.Drawing.Point(23, 84);
@@ -134,12 +134,12 @@
             this.txtComida.Size = new System.Drawing.Size(56, 20);
             this.txtComida.TabIndex = 4;
             // 
-            // txtimpuestos
+            // txtImpuestos
             // 
-            this.txtimpuestos.Location = new System.Drawing.Point(81, 57);
-            this.txtimpuestos.Name = "txtimpuestos";
-            this.txtimpuestos.Size = new System.Drawing.Size(56, 20);
-            this.txtimpuestos.TabIndex = 3;
+            this.txtImpuestos.Location = new System.Drawing.Point(81, 57);
+            this.txtImpuestos.Name = "txtImpuestos";
+            this.txtImpuestos.Size = new System.Drawing.Size(56, 20);
+            this.txtImpuestos.TabIndex = 3;
             // 
             // txtAlquiler
             // 
@@ -186,6 +186,7 @@
             this.cmdCancelar.TabIndex = 11;
             this.cmdCancelar.Text = "CANCELAR";
             this.cmdCancelar.UseVisualStyleBackColor = false;
+            this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
             // 
             // lblTotal
             // 
@@ -229,7 +230,7 @@
         private System.Windows.Forms.GroupBox mrcGastos;
         private System.Windows.Forms.TextBox txtVarios;
         private System.Windows.Forms.TextBox txtComida;
-        private System.Windows.Forms.TextBox txtimpuestos;
+        private System.Windows.Forms.TextBox txtImpuestos;
         private System.Windows.Forms.TextBox txtAlquiler;
         private System.Windows.Forms.Label lblAlquiler;
         private System.Windows.Forms.Label lblVarios;

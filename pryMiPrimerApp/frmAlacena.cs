@@ -12,6 +12,7 @@ namespace pryMiPrimerApp
 {
     public partial class frmAlacena : Form
     {
+        
         public frmAlacena()
         {
             InitializeComponent();
@@ -33,6 +34,21 @@ namespace pryMiPrimerApp
         }
 
         private void mrcAgregarproducto_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

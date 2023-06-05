@@ -40,13 +40,23 @@ namespace pryMiPrimerApp
         {
             varDeposito = Convert.ToDecimal(txtDeposito.Text);
             varAlquiler = Convert.ToDecimal(txtAlquiler.Text);
-            varImpuestos = Convert.ToDecimal(txtimpuestos.Text);
+            varImpuestos = Convert.ToDecimal(txtImpuestos.Text);
             varComida = Convert.ToDecimal(txtComida.Text);
             varVarios = Convert.ToDecimal(txtVarios.Text);
 
             varTotal = varDeposito - (varAlquiler + varImpuestos + varComida + varVarios);
 
             lblTotal.Text = varTotal.ToString();
+        }
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+            txtDeposito.Text = 0.ToString();
+            txtAlquiler.Text = 0.ToString();
+            txtImpuestos.Text = 0.ToString() ;
+            txtComida.Text = 0.ToString();
+            txtVarios.Text = 0.ToString();
+            lblTotal.Text = 0.ToString();
         }
     }
 }
